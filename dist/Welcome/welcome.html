@@ -1,0 +1,12 @@
+<div class="welcome">
+  <div class="welcome-container">
+    <div class="welcome-tile">
+      <p class="welcome-title">Event Code</p>
+      <p class="welcome-text">Please enter the event code:</p>
+      <input id="boardCode" type="text" class="form-input input-lg" ng-model="vm.code" placeholder="Your event code" autocomplete="off">
+      <br/>
+      <div ng-if="vm.showCodeHelp" class="text-danger"><small>Sorry, this is not a valid code!</small></div>
+      <button id="button" class="btn btn-success btn-lg welcome-button" ng-click="vm.loadScoreboard()" ng-disabled="vm.code === ''">Lets Go!</button>
+    </div>
+  </div>
+</div>
